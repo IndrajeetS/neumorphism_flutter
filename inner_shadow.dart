@@ -1,6 +1,3 @@
-// Example which demonstrates a possible way of implementing inner shadows in Flutter
-// Preview: https://i.ibb.co/q0Xn4s3/Image.png
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -20,7 +17,7 @@ class MyHomePage extends StatelessWidget {
   final Widget child = Padding(
     padding: EdgeInsets.all(25),
     child: Text(
-      'Yoooo!',
+      'Awesome Flutter',
       style: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 16,
@@ -66,8 +63,7 @@ class InnerShadowBox extends StatelessWidget {
           ),
         ],
       ),
-      // SOO, I am suggesting to use inner container, which can
-      // create inner shadow effect.
+      // Create inner shadow effect.
       child: Container(
         // Child is gonnna be placed inside second container.
         child: child,
@@ -91,9 +87,10 @@ class InnerShadowBox extends StatelessWidget {
               offset: Offset(-14, -14),
             ),
           ],
-          // I hope you got me. Have a great day! :)
         ),
       ),
     );
   }
 }
+
+// Have a great day! :)
